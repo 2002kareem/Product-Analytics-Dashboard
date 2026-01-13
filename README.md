@@ -1,69 +1,44 @@
-📌 Project Overview
-This project demonstrates an end-to-end data analysis workflow, from building a database to creating an interactive business intelligence dashboard. The goal was to analyze sales performance, profit margins, and growth trends for a high-end audio technology company.
+# Product Analytics Dashboard (End-to-End Data Analysis)
 
-🛠 Tools & Technologies
-Database: Microsoft SQL Server
+## 📌 Project Overview
+This project showcases a complete data analysis workflow, starting from raw data ingestion in a relational database to the creation of an interactive business intelligence dashboard. [cite_start]The analysis focuses on sales performance, profit margins, and growth trends for a global audio technology company[cite: 1, 2].
 
-Data Visualization: Power BI
+## 🛠 Tools & Technologies
+* [cite_start]**Database Management:** Microsoft SQL Server [cite: 1, 2]
+* [cite_start]**Data Visualization:** Power BI [cite: 1, 2]
+* [cite_start]**Query Language:** T-SQL (SQL Server) [cite: 1, 2]
+* [cite_start]**Core Skills:** ETL (Extract, Transform, Load), Data Modeling, DAX (Data Analysis Expressions), Data Cleaning[cite: 1, 2].
 
-Language: SQL (T-SQL)
+## 🚀 Implementation Steps
 
-Concepts: Data Modeling, ETL, DAX (Data Analysis Expressions), Data Cleaning.
+### 1. Database Setup & Data Cleaning (SQL Server)
+* [cite_start]Created a dedicated SQL database to house sales, product, and discount data[cite: 1, 2].
+* [cite_start]Performed data cleaning using SQL scripts to handle nulls and format inconsistencies[cite: 1, 2].
+* [cite_start]Developed **CTEs (Common Table Expressions)** and complex **JOINs** to transform raw data into a structured format ready for analysis[cite: 1, 2].
 
-🚀 Implementation Steps
-1. Database & Data Cleaning (SQL Server)
-Created a local SQL database and imported raw datasets (Sales, Products, and Discounts).
+### 2. Data Integration & Modeling
+* [cite_start]Connected **Power BI** to the **SQL Server** instance for direct data retrieval[cite: 1, 2].
+* [cite_start]Engineered a star-schema data model within Power BI to optimize report performance[cite: 1, 2].
 
-Performed data cleaning and transformation using SQL Queries.
+### 3. DAX Analysis
+Developed advanced DAX measures to track key performance indicators (KPIs), including:
+* [cite_start]**Total Revenue & Net Profit** [cite: 1, 2]
+* [cite_start]**Year-over-Year (YoY) Growth Metrics** [cite: 1, 2]
+* [cite_start]**Unit Sales Trends** [cite: 1, 2]
+* [cite_start]**Profit Margin Analysis** across different categories [cite: 1, 2]
 
-Utilized CTEs (Common Table Expressions) and JOINs to aggregate data and calculate essential business metrics before importing to Power BI.
+### 4. Interactive Dashboard Features
+* [cite_start]**Image-Based Slicers:** Interactive visuals that allow users to filter data by clicking on product images[cite: 1, 2].
+* [cite_start]**Dynamic Tooltips:** Custom hover-over insights providing detailed breakdowns of customer segments[cite: 1, 2].
+* [cite_start]**Global Sales Map:** Geospatial analysis of revenue performance by country[cite: 1, 2].
 
-2. Data Integration & Transformation
-Connected Power BI to the SQL Server database to ensure data integrity and real-time updates. 
-+1
+## 📈 Key Business Insights
+* [cite_start]Identified specific discount strategies that successfully drive volume without compromising long-term profitability[cite: 1, 2].
+* [cite_start]Visualized seasonal sales peaks, allowing for better inventory management and marketing alignment[cite: 1, 2].
 
-Further refined the data in Power Query to ensure all data types were correct for visualization.
+## 📂 Repository Contents
+* [cite_start]`sales.pbix`: The full Power BI report file[cite: 1].
+* `SQL_Queries.sql`: (Optional) The T-SQL scripts used for data transformation.
 
-3. Data Modeling & DAX
-Established a star schema data model for efficient filtering.
-
-Developed custom DAX measures to calculate:
-
-Total Revenue & Total Profit
-
-Year-over-Year (YoY) Growth
-
-Unit Sales Trends
-
-Profit Margins by Product Category
-
-4. Dashboard Design
-Built an interactive one-page dashboard featuring:
-
-
-Image Slicers: Allows users to filter the entire report by selecting specific product images. 
-+1
-
-
-Custom Tooltips: Hover effects that reveal deeper insights into customer segments and pricing strategies. 
-
-Geospatial Analysis: Revenue breakdown by country to identify top-performing markets.
-
-Time-Series Analysis: Visualizing sales peaks and valleys across different months and years.
-
-📈 Key Insights
-Identified high-performing product categories that drive the majority of the profit.
-
-Discovered specific discount bands that maximize volume without significantly eroding margins.
-
-Analyzed seasonal trends to help stakeholders plan for inventory and marketing campaigns.
-
-📂 Repository Contents
-
-sales.pbix: The complete Power BI project file including the data model and dashboard. 
-+1
-
-SQL_Queries.sql: (Optional - Add your SQL script file here) The scripts used for database setup and data transformation.
-
-🔗 Credits
-This project was inspired by and implemented following the tutorial by Absent Data.
+## 🔗 Acknowledgments
+[cite_start]This project was implemented as part of a data analysis case study inspired by the **Absent Data** tutorial series[cite: 2].
